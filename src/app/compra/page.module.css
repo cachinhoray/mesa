@@ -1,0 +1,85 @@
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #7A288A;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+}
+
+.searchfield {
+    width: 50%;
+    margin: 2.5rem auto 2rem auto;
+}
+
+.searchfield__bar form input {
+    background-color: #FFFFFF;
+    color: #000;
+}
+
+.lightGreyBG {
+    background: #e3e3e3;
+}
+
+.contact-info {
+    background-color: #F2F2F2;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Pricing table styles */
+.pricingtable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pricingtable th,
+.pricingtable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.pricingtable th {
+    background-color: #f0f0f0;
+}
+
+/* Subscription form styles */
+.subscriptionform {
+    margin-top: 20px;
+}
+
+.subscriptionform label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.subscriptionform input,
+.subscriptionform select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.subscriptionform button[type="submit"] {
+    background-color: #7A288A;
+    /* Purple background */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscriptionform button[type="submit"]:hover {
+    background-color: #6c207a;
+    /* Darker purple background */
+}
