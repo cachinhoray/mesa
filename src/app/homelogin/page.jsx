@@ -1,39 +1,36 @@
-// pages/compra.js
 
 import Head from 'next/head';
-import styles from '../styles/page.module.css';
 
-export default function Compra() {
+export default function Compra()  {
   return (
-    <div className={styles.container}>
+    <div className={'container'}>
       <Head>
         <title>Tela de Compra</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles.css" />
-      </Head>
+       </Head>
 
       <main>
         
         <h1>Finalizar Compra</h1>
         
-        <form action="#" className={styles['checkout-form']}>
-          <div className={styles['form-group']}>
+        <form action="#" className={'checkout-form'}>
+          <div className={'form-group'}>
             <label htmlFor="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required />
           </div>
 
-          <div className={styles['form-group']}>
+          <div className={'form-group'}>
             <label htmlFor="email">Email:</label>
             <input type="email" id="email" name="email" required />
           </div>
 
-          <div className={styles['form-group']}>
+          <div className={'form-group'}>
             <label htmlFor="endereco">Endereço de Entrega:</label>
             <textarea id="endereco" name="endereco" required></textarea>
           </div>
 
-          <div className={styles['form-group']}>
+          <div className={'form-group'}>
             <label htmlFor="produto">Produto:</label>
             <select id="produto" name="produto">
               <option value="produto1">Produto 1</option>
@@ -42,12 +39,12 @@ export default function Compra() {
             </select>
           </div>
 
-          <div className={styles['form-group']}>
+          <div className={'form-group'}>
             <label htmlFor="quantidade">Quantidade:</label>
             <input type="number" id="quantidade" name="quantidade" min="1" required />
           </div>
 
-          <div className={styles['form-group']}>
+          <div className={'form-group'}>
             <label htmlFor="plano">Plano:</label>
             <select id="plano" name="plano">
               <option value="basico">Básico</option>
@@ -57,7 +54,7 @@ export default function Compra() {
             </select>
           </div>
 
-          <div className={styles['form-group']}>
+          <div className={'form-group'}>
             <label htmlFor="formaPagamento">Forma de Pagamento:</label>
             <select id="formaPagamento" name="formaPagamento">
               <option value="cartaoCredito">Cartão de Crédito</option>
@@ -67,17 +64,17 @@ export default function Compra() {
             </select>
           </div>
 
-          <div className={styles['form-group']}>
+          <div className={'form-group'}>
             <label htmlFor="cpf">CPF:</label>
             <input type="text" id="cpf" name="cpf" required />
           </div>
 
-          <div className={styles['form-group']}>
+          <div className={'form-group'}>
             <label htmlFor="telefone">Telefone:</label>
             <input type="tel" id="telefone" name="telefone" required />
           </div>
 
-          <div className={styles['form-group']}>
+          <div className={'form-group'}>
             <label htmlFor="cep">CEP:</label>
             <input type="text" id="cep" name="cep" required />
           </div>
