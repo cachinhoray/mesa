@@ -14,8 +14,7 @@ export default function Login() {
             </Head>
 
             <div className={styles.loginContainer}>
-                <Image src="/pinball.jpeg" alt="Imagem de login" width={100} height={100} />
-                <h2>Área de Login</h2>
+                <h2 className={styles.h2}>Área de Login</h2>
                 <form>
                     <input type="text" placeholder="Usuário" required />
                     <input type="password" placeholder="Senha" required />

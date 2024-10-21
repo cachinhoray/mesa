@@ -22,9 +22,9 @@ function Usuarios() {
   };
 
   return (
-    <div>
+    <div className={styles.container}> 
       <h2>Cadastrar Usuário</h2>
-      <form onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <label>
           Nome:
           <input
@@ -52,7 +52,7 @@ function Usuarios() {
             onChange={handleInputChange}
           />
         </label>
-        <button type="submit">Cadastrar</button>
+        <button className={styles.botao} type="submit">Cadastrar</button>
       </form>
     </div>
   );
