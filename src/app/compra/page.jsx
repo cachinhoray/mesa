@@ -42,12 +42,6 @@ export default function Compra() {
             <input type="email" id="email" name="email" required />
           </div>
 
-          {/* Endereço de Entrega */}
-          <div className={styles.formGroup}>
-            <label htmlFor="endereco">Endereço de Entrega:</label>
-            <textarea id="endereco" name="endereco" required></textarea>
-          </div>
-
           {/* Produto */}
           <div className={styles.formGroup}>
             <label htmlFor="produto">Produto:</label>

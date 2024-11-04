@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 import styles from "./page.module.css";
 import Image from "next/image";
 
+
+
 import pinballg from './pinball-game.jpg';
 import pinballm from './pinball-machine.jpg';
 
