@@ -1,97 +1,48 @@
+// Home.js
+'use client';
+import React from 'react';
 import Head from 'next/head';
-import styles from './page.module.css'; // Supondo que você tenha um arquivo de estilos
+import styles from './Home.module.css'; // Certifique-se de ter este arquivo CSS
 
-export default function Compra() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Tela de Compra</title>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
+const Home = () => {
+    return (
+        <div className={styles.container}>
+            <Head>
+                <title>Página Inicial</title>
+                <meta charSet="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            </Head>
 
-      <main className={styles.main}>
-        <h1>Finalizar Compra</h1>
+            <header className={styles.header}>
+                <h1>Bem-vindo ao Sistema de Pinball</h1>
+                <p>Explore a nossa tecnologia inovadora e jogue pinball como nunca antes!</p>
+            </header>
 
-        <form action="#" className={styles.checkoutForm}>
-          {/* Nome */}
-          <div className={styles.formGroup}>
-            <label htmlFor="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required />
-          </div>
+            <main className={styles.mainContent}>
+                <section className={styles.section}>
+                    <h2>Nossos Produtos</h2>
+                    <p>Descubra nossas mesas de pinball equipadas com tecnologia de ponta.</p>
+                    <button className={styles.button}>Saiba Mais</button>
+                </section>
 
-          {/* Email */}
-          <div className={styles.formGroup}>
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
+                <section className={styles.section}>
+                    <h2>Como Funciona</h2>
+                    <p>Aprenda sobre a tecnologia por trás das nossas mesas de pinball.</p>
+                    <button className={styles.button}>Descubra</button>
+                </section>
 
-          {/* Endereço de Entrega */}
-          <div className={styles.formGroup}>
-            <label htmlFor="endereco">Endereço de Entrega:</label>
-            <textarea id="endereco" name="endereco" required></textarea>
-          </div>
+                <section className={styles.section}>
+                    <h2>Entre em Contato</h2>
+                    <p>Tem alguma dúvida? Entre em contato conosco!</p>
+                    <button className={styles.button}>Fale Conosco</button>
+                </section>
+            </main>
 
-          {/* Produto */}
-          <div className={styles.formGroup}>
-            <label htmlFor="produto">Produto:</label>
-            <select id="produto" name="produto">
-              <option value="produto1">Produto 1</option>
-              <option value="produto2">Produto 2</option>
-              <option value="produto3">Produto 3</option>
-            </select>
-          </div>
-
-          {/* Quantidade */}
-          <div className={styles.formGroup}>
-            <label htmlFor="quantidade">Quantidade:</label>
-            <input type="number" id="quantidade" name="quantidade" min="1" required />
-          </div>
-
-          {/* Plano */}
-          <div className={styles.formGroup}>
-            <label htmlFor="plano">Plano:</label>
-            <select id="plano" name="plano">
-              <option value="basico">Básico</option>
-              <option value="profissional">Profissional</option>
-              <option value="empresarial">Empresarial</option>
-              <option value="extraPlus">Extra Plus</option>
-            </select>
-          </div>
-
-          {/* Forma de Pagamento */}
-          <div className={styles.formGroup}>
-            <label htmlFor="formaPagamento">Forma de Pagamento:</label>
-            <select id="formaPagamento" name="formaPagamento">
-              <option value="cartaoCredito">Cartão de Crédito</option>
-              <option value="boleto">Boleto</option>
-              <option value="paypal">PayPal</option>
-              <option value="pix">PIX</option>
-            </select>
-          </div>
-
-          {/* CPF */}
-          <div className={styles.formGroup}>
-            <label htmlFor="cpf">CPF:</label>
-            <input type="text" id="cpf" name="cpf" required />
-          </div>
-
-          {/* Telefone */}
-          <div className={styles.formGroup}>
-            <label htmlFor="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required />
-          </div>
-
-          {/* CEP */}
-          <div className={styles.formGroup}>
-            <label htmlFor="cep">CEP:</label>
-            <input type="text" id="cep" name="cep" required />
-          </div>
-
-          {/* Botão de Finalizar Compra */}
-          <button className={styles.submitButton} type="submit">Finalizar Compra</button>
-        </form>
-      </main>
-    </div>
-  );
+            <footer className={styles.footer}>
+                <p>&copy; 2024 Sistema de Pinball. Todos os direitos reservados.</p>
+            </footer>
+        </div>
+    );
 }
+
+export default Home;

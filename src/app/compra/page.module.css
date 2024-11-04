@@ -1,85 +1,104 @@
 .container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #FFFFFF;
-    border: 1px solid #DDDDDD;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.header {
-    background-color: #7A288A;
-    color: #FFFFFF;
-    padding: 10px;
-    text-align: center;
-}
-
-.searchfield {
-    width: 50%;
-    margin: 2.5rem auto 2rem auto;
-}
-
-.searchfield__bar form input {
-    background-color: #FFFFFF;
-    color: #000;
-}
-
-.lightGreyBG {
-    background: #e3e3e3;
-}
-
-.contact-info {
-    background-color: #F2F2F2;
-    padding: 1rem;
-    text-align: center;
-}
-
-/* Pricing table styles */
-.pricingtable {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.pricingtable th,
-.pricingtable td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-
-.pricingtable th {
-    background-color: #f0f0f0;
-}
-
-/* Subscription form styles */
-.subscriptionform {
-    margin-top: 20px;
-}
-
-.subscriptionform label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.subscriptionform input,
-.subscriptionform select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-}
-
-.subscriptionform button[type="submit"] {
-    background-color: #7A288A;
-    /* Purple background */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4a148c, #880e4f);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     color: #fff;
-    padding: 10px 20px;
+  }
+  
+  .main {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f3e5f5;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .checkoutForm {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    width: 100%;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .checkoutForm input[type="text"],
+  .checkoutForm input[type="email"],
+  .checkoutForm input[type="tel"],
+  .checkoutForm input[type="number"],
+  .checkoutForm textarea,
+  .checkoutForm select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .checkoutForm input::placeholder,
+  .checkoutForm textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .checkoutForm input:focus,
+  .checkoutForm textarea:focus,
+  .checkoutForm select:focus {
+    outline: none;
+    box-shadow: 0 0 10px #d500f9;
+  }
+  
+  .imageContainer {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .productImage {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #d500f9;
+    font-weight: bold;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.subscriptionform button[type="submit"]:hover {
-    background-color: #6c207a;
-    /* Darker purple background */
-}
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #aa00ff;
+  }
+  

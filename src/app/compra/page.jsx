@@ -1,130 +1,82 @@
-import Image from 'next/image';
+'use client'
+import React, { useState } from 'react'; 
 
+
+import Head from 'next/head';
 import styles from './page.module.css';
 
-import pimbal6 from '../../../public/pimbal6.jpg';
-import pinball1 from '../../../public/pinball1.jpg';
-import pimbal3 from '../../../public/pimbal3.jpg';
-import pimbal4 from '../../../public/pimbal4.jpg';
-import pimbal5 from '../../../public/pimbal5.jpg';
-import pimbal9 from '../../../public/pimbal9.jpg';
-import pimbal7 from '../../../public/pimbal7.jpg';
-import pinball10 from '../../../public/pinball10.jpg';
-
 export default function Compra() {
-    return (
-        <div className={styles.container}>
-            <div className={styles.header}>
-                <h1>Vendas/aluguel mesa de Pinball</h1>
-            </div>
-            <br />
-            {/* Pricing table */}
-            PLANOS MENSAIS
+  const [selectedProduct, setSelectedProduct] = useState("produto1");
 
-            <table className={styles.pricingtable}>
+  const handleProductChange = (e) => {
+    setSelectedProduct(e.target.value);
+  };
 
-                <thead>
-                    <tr>
-                        <th>Plano</th>
-                        <th>Preço</th>
-                        <th>Descrição</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Básico</td>
-                        <td>R$ 30,90</td>
-                        <td>1 mesa pequena </td>
-                    </tr>
-                    <tr>
-                        <td>Profissional</td>
-                        <td>R$ 350,00</td>
-                        <td>2 mesas, uma grande a outra pequena</td>
-                    </tr>
-                    <tr>
-                        <td>Empresarial</td>
-                        <td>R$ 2.780</td>
-                        <td>3 mesas, 2 grandes e uma pequena (opcional)</td>
-                    </tr>
-                    <tr>
-                        <td>Extra Plus</td>
-                        <td>R$ 6.545</td>
-                        <td>4 a 7 mesas grandes </td>
-                    </tr>
-                </tbody>
-            </table>
-            {/* Subscription form */}
-            <form className={styles.subscriptionform}>
-                <label for="plan">Selecione o plano:</label>
-                <select id="plan" name="plan">
-                    <option value="basico">Básico</option>
-                    <option value="profissional">Profissional</option>
-                    <option value="empresarial">Empresarial</option>
-                    <option value="empresarial">Extra Plus</option>
-                </select>
+  const productImages = {
+    produto1: "/pimbal3.jpg",
+    produto2: "/pimbal4.jpg",
+    produto3: "/pimbal5.jpg",
+  };
 
-                <button type="button" className={[styles.btn, styles.btnlight]}>Confirmar</button>
+  return (
+    <div className={styles.container}>
+      <Head>
+        <title>Tela de Compra</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
 
-                <div>
-                    <br />
+      <main className={styles.main}>
+        <h1 className={styles.title}>Finalizar Compra</h1>
 
-                    <table style={{ width: '100%' }}>
-                        <tbody>
-                            <tr>
-                                <th>Vendas</th>
-                            </tr>
-                            <tr>
-                                <td>M1</td>
+        <form action="#" className={styles.checkoutForm}>
+          {/* Nome */}
+          <div className={styles.formGroup}>
+            <label htmlFor="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
 
-                                <td>$12.500</td>
-                                <td><Image width={788} height={960} src={pimbal6} style={{ width: 100, height: 100, }} /></td>
+          {/* Email */}
+          <div className={styles.formGroup}>
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-                                <td>M2</td>
-                                <td>$13.320</td>
-                                <td><Image width={788} height={960} src={pinball1} style={{ width: 100, height: 100, }} /></td>
+          {/* Endereço de Entrega */}
+          <div className={styles.formGroup}>
+            <label htmlFor="endereco">Endereço de Entrega:</label>
+            <textarea id="endereco" name="endereco" required></textarea>
+          </div>
 
-                                <td>M3</td>
-                                <td>$16.200</td>
-                                <td><Image width={788} height={960} src={pimbal3} style={{ width: 100, height: 100, }} /></td>
+          {/* Produto */}
+          <div className={styles.formGroup}>
+            <label htmlFor="produto">Produto:</label>
+            <select id="produto" name="produto" onChange={handleProductChange}>
+              <option value="produto1">Produto 1</option>
+              <option value="produto2">Produto 2</option>
+              <option value="produto3">Produto 3</option>
+            </select>
+          </div>
 
-                                <td>M4</td>
-                                <td>$13.250</td>
-                                <td><Image width={788} height={960} src={pimbal4} style={{ width: 100, height: 100, }} /></td>
-                            </tr>
-                            <tr>
-                                <td>M5</td>
-                                <td>$17.128</td>
-                                <td><Image width={788} height={960} src={pimbal5} style={{ width: 100, height: 100, }} /></td>
-                                <td>M6</td>
-                                <td>$15.000</td>
-                                <td><Image width={788} height={960} src={pimbal9} style={{ width: 100, height: 100, }} /></td>
-                                <td>M7</td>
-                                <td>$8.300</td>
-                                <td><Image width={788} height={960} src={pimbal7} style={{ width: 100, height: 100, }} /></td>
-                                <td>M8</td>
-                                <td>$10.700</td>
-                                <td><Image width={788} height={960} src={pinball10} style={{ width: 100, height: 100, }} /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <select className={styles.formselect} aria-label="Default select example">
-                        <option selected>Selecione sua mesa</option>
-                        <option value="1">M1</option>
-                        <option value="2">M2</option>
-                        <option value="3">M3</option>
-                        <option value="3">M4</option>
-                        <option value="3">M5</option>
-                        <option value="3">M6</option>
-                        <option value="3">M7</option>
-                        <option value="3">M8</option>
+          {/* Imagem do Produto */}
+          <div className={styles.imageContainer}>
+            <img
+              src={productImages[selectedProduct]}
+              alt={`Imagem do ${selectedProduct}`}
+              className={styles.productImage}
+            />
+          </div>
 
-                    </select>
-                </div>
+          {/* Quantidade */}
+          <div className={styles.formGroup}>
+            <label htmlFor="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" required />
+          </div>
 
-                <label for="floatingTextarea">Comentarios</label>
-                <textarea className={styles.formcontrol} placeholder="Digite aqui " id="floatingTextarea"></textarea>
-            </form>
-
-        </div>
-    );
+          {/* Botão de Finalizar Compra */}
+          <button className={styles.submitButton} type="submit">Finalizar Compra</button>
+        </form>
+      </main>
+    </div>
+  );
 }
