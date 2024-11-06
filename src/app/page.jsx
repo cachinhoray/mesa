@@ -12,7 +12,7 @@ export default function Home() {
       <li><Link href={"/homelogin"}>home login</Link></li>
       <li><Link href={"/usuarios/cadusuario"}>cad usuario</Link></li>
       <li><Link href={"/usuarios/login"}>login</Link></li>
-      <li><Link href={"/usuarios/testeTelas"}>orçamento</Link></li>
+      <li><Link href={"/orcamento"}>orçamento</Link></li>
 
     </ul>
     

@@ -7,8 +7,8 @@ import Image from "next/image";
 
 
 
-import pinballg from './pinball-game.jpg';
-import pinballm from './pinball-machine.jpg';
+import pinballg from './pinball1.jpg';
+import pinballm from './pinball2.jpg';
 
 export default function Duvidas() {
   return (

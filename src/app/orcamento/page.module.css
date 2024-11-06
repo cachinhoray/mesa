@@ -1,0 +1,114 @@
+/* Orcamento.module.css */
+.container {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4a148c, #880e4f);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px; /* Centraliza o formulário */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+.input,
+.textarea {
+    width: 90%; /* Ajuste de largura para centralizar */
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    text-align: center; /* Centraliza o texto dentro da caixa */
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center; /* Centraliza o placeholder também */
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px #d500f9;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.botao {
+    width: 90%; /* Ajuste de largura para centralizar */
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #d500f9;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.botao:hover {
+    background-color: #aa00ff;
+    transform: scale(1.05);
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}

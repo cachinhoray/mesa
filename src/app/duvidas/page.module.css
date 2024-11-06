@@ -1,42 +1,45 @@
 /* page.module.css */
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .h1 {
-    font-size: 2.5rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .p {
-    font-size: 2.5.1rem;
-    color: #333;
-    margin-bottom: 15px;
-    text-align: justify;
-  }
-  
-  .imageContainer {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  
-  .imageContainer img {
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-  }
-  
-  .imageContainer img:hover {
-    transform: scale(1.05);
-  }
-  
+  max-width: 800px;
+  margin: 40px auto; /* Ajuste para centralizar e adicionar um espaço ao topo */
+  padding: 20px 30px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  line-height: 1.6; /* Melhora a legibilidade do texto */
+}
+
+.h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Sutil sombra para destacar o título */
+}
+
+.p {
+  font-size: 1.1rem; /* Correção de tamanho para texto de parágrafo */
+  color: #333;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.imageContainer img {
+  max-width: 100%; /* Ajuste para que a imagem não ultrapasse a largura do container */
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a transição de zoom */
+}
+
+.imageContainer img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Efeito de sombra mais forte no hover */
+}
