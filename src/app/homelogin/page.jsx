@@ -7,28 +7,30 @@ import styles from "./page.module.css"; // Certifique-se de que o nome do arquiv
 const Home = () => {
     const produtos = [
         {
-            id: 1,
-            nome: "Mesa de Pinball 1",
-            descricao: "Mesa de pinball com tecnologia inovadora.",
-            imagem: "/pimbal3.jpg",
-            valorVenda: 5000,
-            valorAluguel: 500,
+            prod_id: 1,
+            prod_nome: "Mesa de Pinball 1",
+            prod_img: "/pimbal3.jpg",
+            prod_valor_venda: 5000,
+            prod_valor_aluguel: 500,
+            prod_descricao: "Mesa de pinball com tecnologia inovadora.",
+            
         },
         {
-            id: 2,
-            nome: "Mesa de Pinball 2",
-            descricao: "Experiência única de jogo.",
-            imagem: "/pimbal4.jpg",
-            valorVenda: 6000,
-            valorAluguel: 600,
+            prod_id: 2,
+            prod_nome: "Mesa de Pinball 2",
+            prod_img: "/pimbal4.jpg",
+            prod_valor_venda: 6000,
+            prod_valor_aluguel: 600,
+            prod_descricao: "Experiência única de jogo.",
+           
         },
         {
-            id: 3,
-            nome: "Mesa de Pinball 3",
-            descricao: "A mesa mais divertida para a família.",
-            imagem: "/pimbal5.jpg",
-            valorVenda: 7000,
-            valorAluguel: 700,
+            prod_id: 3,
+            prod_nome: "Mesa de Pinball 3",
+            prod_img: "/pimbal5.jpg",
+            prod_valor_venda: 7000,
+            prod_valor_aluguel: 600,
+            prod_descricao: "A mesa mais divertida para a família.",
         }
     ];
 
