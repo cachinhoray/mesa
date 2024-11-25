@@ -41,7 +41,7 @@
   border: 1px solid #b41c7a;
   border-radius: 4px;
   box-sizing: border-box;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(80, 76, 76, 0.164);
   color: #fff;
   font-size: 1rem;
 }
