@@ -3,6 +3,31 @@ import React, { useState } from 'react';
 
 import styles from './page.module.css';
 
+import api from '@/services/api'
+
+export default function Usuarios ({ onClose }) {
+  const [Usuarios, setUsuarios] = useState({
+    usu_nome: '',
+    usu_email: '',
+    usu_senha: 
+
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setUsuarios((prev) => ({ ...prev, [name]: value }));
+  };
+
+  function handleValida() {
+    let validado = true;
+    if (defaultOverrides.usu_nome == '') {
+      alert('O nome de usuario deve ser preenchido!');
+      validado = false;
+    }
+    
+  }
+}
+
 function Usuarios() {
   const [formData, setFormData] = useState({
     nome: '',
